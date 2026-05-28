@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #111;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+
+.page {
+  width: 930px;
+  margin: 0 auto;
+  padding: 18px 22px 30px;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+h1 {
+  margin: 0 0 14px;
+  font-size: 26px;
+  color: #174ea6;
+}
+
+.role {
+  margin: 3px 0;
+  color: #174ea6;
+  font-weight: bold;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-top: 28px;
+}
+
+.icons {
+  margin-top: 16px;
+}
+
+.icons a {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 7px;
+  color: white;
+  background: #2f80ed;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+h2 {
+  margin-top: 22px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #777;
+  color: #174ea6;
+  font-size: 17px;
+}
+
+h2 span {
+  font-size: 15px;
+}
+
+.note {
+  color: red;
+  font-style: italic;
+}
+
+.bar {
+  margin: 10px 0 12px;
+  padding: 4px;
+  text-align: center;
+  background: #cfcfcf;
+  font-weight: bold;
+}
+
+.paper {
+  display: flex;
+  gap: 16px;
+  background: #fffbd6;
+  margin: 16px 0;
+  padding: 14px;
+}
+
+.paper img {
+  width: 180px;
+  height: 105px;
+  object-fit: cover;
+  border: 1px solid #aaa;
+}
+
+.paper h3 {
+  margin: 0 0 6px;
+  color: #0645ad;
+  font-size: 15px;
+}
+
+.paper p {
+  margin: 4px 0;
+}
+
+.small {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.exp {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.exp img {
+  width: 120px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.exp h3 {
+  margin: 0 0 6px;
+  color: #0645ad;
+  font-size: 15px;
+}
+
+.exp p {
+  margin: 4px 0;
+}
+
+footer {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #aaa;
+  color: #666;
+  font-size: 12px;
+}
+
+@media (max-width: 980px) {
+  .page {
+    width: auto;
+    padding: 14px;
+  }
+
+  .top {
+    flex-direction: column;
+  }
+
+  .avatar {
+    margin-top: 12px;
+  }
+
+  .paper,
+  .exp {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .paper img,
+  .exp img {
+    width: 100%;
+    height: auto;
+  }
+}
